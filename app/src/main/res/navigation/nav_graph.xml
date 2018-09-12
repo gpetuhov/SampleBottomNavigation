@@ -3,11 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/songsFragment">
+    app:startDestination="@id/navigation_songs">
+
+    <!--Ids of the fragments must be the same as ids of bottom navigation menu items-->
 
     <fragment
-        android:id="@+id/songsFragment"
+        android:id="@+id/navigation_songs"
         android:name="com.gpetuhov.android.samplebottomnavigation.SongsFragment"
         android:label="fragment_songs"
         tools:layout="@layout/fragment_songs" />
+
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:name="com.gpetuhov.android.samplebottomnavigation.AlbumsFragment"
+        android:label="fragment_albums"
+        tools:layout="@layout/fragment_albums" />
+
+    <fragment
+        android:id="@+id/navigation_artists"
+        android:name="com.gpetuhov.android.samplebottomnavigation.ArtistsFragment"
+        android:label="fragment_artists"
+        tools:layout="@layout/fragment_artists" />
+
 </navigation>
